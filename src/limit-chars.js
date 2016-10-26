@@ -1,3 +1,5 @@
+'use strict';
+
 class LimitChars {
 
 	constructor(element = null) {
@@ -31,9 +33,9 @@ class LimitChars {
 		if (this._countOutput) {
 
 			let nodes = document.querySelectorAll(this._countOutput);
-			let elems = [].slice.call(nodes);
+			nodes = [].slice.call(nodes);
 
-			elems.forEach((elem) => {
+			nodes.forEach((elem) => {
 
 				if (maxLength) { elem.innerHTML = maxLength - value.length; }
 

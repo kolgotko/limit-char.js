@@ -37,9 +37,9 @@ var LimitChars = function () {
 			if (this._countOutput) {
 
 				var nodes = document.querySelectorAll(this._countOutput);
-				var elems = [].slice.call(nodes);
+				nodes = [].slice.call(nodes);
 
-				elems.forEach(function (elem) {
+				nodes.forEach(function (elem) {
 
 					if (maxLength) {
 						elem.innerHTML = maxLength - value.length;
