@@ -25,6 +25,6 @@ gulp.task('build-prod', () => {
 
 gulp.task('watch', () => {
 
-	var watcher = gulp.watch('js/**/*.js', ['dafault']);
+	var watcher = gulp.watch('./src/*.js', ['dafault']);
 
 });
