@@ -1,1 +1,1 @@
-# limit-char.js
+# limit-chars.js
